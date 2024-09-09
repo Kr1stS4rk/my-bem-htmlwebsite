@@ -5,44 +5,72 @@
   <meta name="viewport" content="width=device-width, initialscale=1.0">
   <title>My HTML Page</title>
   </head>
-  <body>
+  <body class="page">
+        <!--Блок Header-->
   <header class="header">
-    <h1 class="header__title">My website</h1>
-    <nav class="header__nav">
-      <ul class="header__nav-list">
-        <li class="header__nav-item"><a href="#tour" class="header__nav-link">Tour</a></li>
-        <li class="header__nav-item"><a href="#info" class="header__nav-link">Info</a></li>
-        <li class="header__nav-item"><a href="/about.html" class="header__nav-link">About us</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="content">
+    <div class=" container header-container">
+      <h1  id="top" class="header__title--active">My website</h1>
+      <button class="button--active"><span class="button__icon"><span class="button__text"></span>Clicl here</span></button>
+       <!--Навигация-->
+      <nav class="nav header__nav">
+        <ul class="header__nav--list">
+          <li class="header__nav__item"><a href="#tour" class="header__link">Tour</a></li>
+          <li class="header__nav__item"><a href="#info" class="header__link">Info</a></li>
+          <li class="header__nav__item"><a href="/about.html" class="header__link">About us</a></li>
+        </ul>
+      </nav>
+    </div>
+        </header>
+
+        <!--Блок main-->
+
+  <main class="main-content">
     <h2 class="content__title">Welcome to my adventure</h2>
 <p class="content__text">This is my cat's simple journey</p>
-    <section class="content__section">
-      <h2 class="content__section-title">About Mee</h2>
-  <p class="content__section-text">Hello! My name is Kris and this is my tour</p>
-  <p class="content__section-dscp">Here is a list of my activities:</p>
-  <ol class="content__section-list">
-    <li class="content__section-item">swimming</li>
-    <li class="content__section-item">running</li>
-    <li class="content__section-item">hiking</li>
+    <section class="about">
+      <h2 class="about__title">About Me</h2>
+  <p class="about__text">Hello! My name is Kris and this is my tour</p>
+  <p class="about__dscp">Here is a list of my activities:</p>
+  <ol class="about__list">
+    <li class="about__item">swimming</li>
+    <li class="about__item">running</li>
+    <li class="about__item">hiking</li>
   </ol>
+   <!--Блок main-->
     </section>
     <section class="gallery">
       <h2 class="gallery__title">My favourite places</h2>
-      <img src="https://koshka.top/uploads/posts/2021-12/1638906255_58-koshka-top-p-kot-v-gorakh-63.jpg" alt="Милый котик на горе" class="gallery__img">
+      <img src="https://koshka.top/uploads/posts/2021-12/1638906255_58-koshka-top-p-kot-v-gorakh-63.jpg" alt="Милый котик на горе" class="gallery__img" width="500" height="500">
   <p class="gallery_dscp">You can see what a beautifal place it is </p>
     </section>
-  
+
+    <section class="facts">
+      <h2 class="facts__title">The most interesting facts about Mount Elbrus</h2>
+      <ul class="facts__list">
+        <li class="facts__item">The Highest PEak in Europe: at 5,642 meters</li>
+        <li class="facts__item"> Elbrus is a Donmant Volcano</li>
+        <li class="facts__item">THe mountain is covered by glaciers</li>
+      </ul>
+    </section>
     <section section="contact">
       <h2 class="contact__title">Contact me</h2>
       <p class="contact__text">You can reach me at <a
         href="mailto:kristsarkisyan@mail.ru" class="contact__email">kristsarkisyan@mail.ru</a></p>
+        <div class="contact__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2237.647663230503!2d37.43386667711229!3d55.886126181714005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b538d1400059e5%3A0x7593a4299681dc76!2z0JPRgNCw0L3QtA!5e0!3m2!1sru!2sru!4v1725884726519!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <h3>Мy social networks </h3>
+        <ul class="contact__socials">
+          <li class="contact__social-item"><a href="https://vk.com/feed" target="_blank"  class="contact__social-link">VK</a></li>
+          <li class="contact__social-item"><a href="http://facebook.com.vn" target="_blank" class="contact__social-link">Facebook</a></li>
+          <li class="contact__social-item"><a href="https://github.com/Kr1stS4rk" target="_blank" class="contact__social-link">github</a></li>
+        </ul>
     </section>
   </main>
+   <!--Футер-->
   <footer class="footer">
     <p class="footer__text">&copy; 2024 Kristina Sarkisyan</p>
+    <a href="#top">Наверх</a>
   </footer>
 </body>
 </html>
